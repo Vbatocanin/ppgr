@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 2440ffb42fffe753d9ea845b53a5ba728407f4e1c6f9d4c60ccb73c5e09c2c61
+
+name:           domaci1-projekat
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/domaci1-projekat#readme>
+homepage:       https://github.com/githubuser/domaci1-projekat#readme
+bug-reports:    https://github.com/githubuser/domaci1-projekat/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/domaci1-projekat
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_domaci1_projekat
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable domaci1-projekat-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_domaci1_projekat
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , domaci1-projekat
+  default-language: Haskell2010
+
+test-suite domaci1-projekat-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_domaci1_projekat
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , domaci1-projekat
+  default-language: Haskell2010
